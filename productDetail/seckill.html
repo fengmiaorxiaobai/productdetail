@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <!--  <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    <meta name="format-detection" content="telephone=no" />
+     <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/tsg.css" rel="stylesheet"/>
+    <!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/{{version}}/??flexible_css.js,flexible.js"></script> -->
+   
+    <title>详情页</title>
+    <script>
+		var iScale=1;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+'" />')
+		</script>
+		<script>
+		document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/18.75+"px";
+	</script>
+</head>
+<body>
+	<div class="fix ">
+		<div class="top clearFix">
+			<a href="javascript:;" class="click-btn"><span class="bar"></span></a>
+			<ul class="header-title clearFix" >
+				<li class="active">商品<em class="line"></em></li>
+				<li>详情<em></em></li>
+				<!-- <li>评价<em></em></li> -->
+			</ul>
+			<!-- <div class="share">
+				<span></span>
+			</div> -->
+		</div>
+	</div>
+	<div class="top-block"></div>
+	<section class="pro-content" >
+		<!-- banner轮播 -->
+			<div class="banner swiper-container swiper1" >
+				<ul class="banner clearFix swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="#" class="head-img"><img src="images/banner.jpg"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#" class="head-img"><img src="images/banner.jpg"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#" class="head-img"><img src="images/banner.jpg"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#" class="head-img"><img src="images/banner.jpg"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#" class="head-img"><img src="images/banner.jpg"></a>
+					</li>
+				</ul>
+				<div class="swiper-pagination" id="swiper-pagination">
+					
+				</div>
+				<span class="round"></span>
+			</div>
+		<!-- banner轮播结束 -->
+
+		<!-- 秒杀 -->
+		<div class="seckill-warp clearFix">
+			<div class="seckill-left">
+				<div class="price-warp">
+					<span class="price-nm"><i>&yen;</i>1932.<em>90</em></span>
+					<span class="line-price-prv"><i>&yen;</i>35.50</span>
+				</div>
+				<div class="seckill-numbers clearFix">
+					<span class="fire"><em></em></span>
+					<span class="kill-num">秒杀：还剩88件</span>
+				</div>
+			</div>
+
+			<div class="seckill-right">
+				<strong class="counts">距离结束仅剩：</strong>
+				<div class="time clearFix" id="gettime">
+					<span class="black leftblcok">0</span>
+					<span class="black" >0</span>
+					<strong class="blackdot">:</strong>
+					<span class="black leftblcok">0</span>
+					<span class="black" >0</span>
+					<strong class="blackdot">:</strong>
+					<span class="black leftblcok">0</span>
+					<span class="black" >0</span>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- 秒杀结束 -->
+		
+		<!-- 产品描述及价格 -->
+		<div class="product-discripion">
+			<div class="pro-title">
+				<a href="javascript:;" class="title-text">Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5 处理器/8GB内存/128GB</a>
+				<span class="add-message">返场期,狂欢继续!金龙鱼部分产品满99即赠新西兰进口牛奶!满199即赠新！</span>
+			</div>
+			
+		</div>
+		<!-- 产品描述及价格结束 -->
+		<!-- 产品保证-->
+		<div class="pro-ensure">
+			<ul class="ico-list clearFix">
+				<li>
+					<i class="ico1"><img src="images/ico1.png"></i>
+					<span>有机保证</span>
+				</li>
+				<li>
+					<i class="ico2"><img src="images/ico2.png"></i>
+					<span>品质保证</span>
+				</li>
+				<li>
+					<i class="ico3"><img src="images/ico3.png"></i>
+					<span>中华老字号</span>
+				</li>
+				<li>
+					<i class="ico4"><img src="images/ico4.png"></i>
+					<span>产地专属</span>
+				</li>
+				<li style="margin-bottom: 0">
+					<i class="ico5"><img src="images/ico5.png"></i>
+					<span>免税直供</span>
+				</li>
+				<li style="margin-bottom: 0">
+					<i class="ico6"><img src="images/ico6.png"></i>
+					<span>一县一品</span>
+				</li>
+			</ul>
+		</div>
+		<!-- 产品保证结束 -->
+
+		<!-- 领券-->
+		<div class="product-same-floor commonthing clearFix" >
+			<span class="coupon">领券</span>
+			<div class="coupon-number clearFix ">
+				<div class="clearFix">
+					<i class="le-bg"><img src="images/couponL.png"></i>
+					<i class="ri-bg"><img src="images/couponR.png"></i>
+					<span>满99减5</span>
+				</div>
+				<div class="clearFix">
+					<i class="le-bg"><img src="images/couponL.png"></i>
+					<i class="ri-bg"><img src="images/couponR.png"></i>
+					<span>满199减50</span>
+				</div>
+				<div class="clearFix">
+					<i class="le-bg"><img src="images/couponL.png"></i>
+					<i class="ri-bg"><img src="images/couponR.png"></i>
+					<span>满1999减500</span>
+				</div>
+				
+			</div>
+			<span class="down-point"></span>
+		</div>
+		<!-- 弹出店铺红包-->
+		<div class="shop-packet-warp" style="display: none">
+			<div class="shop-packet-head">
+				<h3>店铺红包</h3>
+				<span class="packet-close" id="close-btn"></span>
+			</div>
+			<div class="shop-packet-content">
+				<ul class="shop-packe-list" id="click-list">
+					<li>
+						<div class="top-mes">
+							<span>2</span><em>元</em>
+						</div>
+						<div class="middle-mes">
+							全场满<span>99.00</span>元包邮
+						</div>
+						<div  class="bottom-mes">
+							使用有效期 2016.12.20-2017.01.01
+						</div>
+					</li>
+					<li>
+						<div class="top-mes">
+							<span>122</span><em>元</em>
+						</div>
+						<div class="middle-mes">
+							全场满<span>99.00</span>元包邮
+						</div>
+						<div  class="bottom-mes">
+							使用有效期 2016.12.20-2017.01.01
+						</div>
+					</li>
+					<li>
+						<div class="top-mes">
+							<span>2</span><em>元</em>
+						</div>
+						<div class="middle-mes">
+							全场满<span>99.00</span>元包邮
+						</div>
+						<div  class="bottom-mes">
+							使用有效期 2016.12.20-2017.01.01
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 弹出店铺红包结束-->
+
+		<!-- 领券结束 -->
+
+		<!-- 促销 -->
+		<div class="product-same-floor commonthing product-same-floor1 clearFix">
+			<span class="coupon sale">促销</span>
+			<div class="sale-active-warp">
+				<div class="full-give clearFix">
+					<span>满送</span>
+					<p>全店铺满99.00包邮，立减5.00</p>
+				</div>
+				<div class="buy-give clearFix">
+					<span>买赠</span>
+					<div class="pro-number">
+						<p><i>温暧冬日线织手套</i><em>X1</em></p>
+						<p><i>温暧冬日线织手套</i><em>X1</em></p>
+						<p><i>温暧冬日线织手套</i><em>X1</em></p>
+					</div>
+					
+				</div>
+			</div>
+			<span class="down-point"></span>
+		</div>
+
+			<!-- 促销弹出框 -->
+		<div class="shop-packet-warp sale-warp" style="display: none">
+			<div class="shop-packet-head">
+				<h3>促销</h3>
+				<span class="packet-close"></span>
+			</div>
+			<div class="sale-active-warp sale-active-box">
+				<a href="javascript:;">
+					<div class="sale-alert-box clearFix">
+						<div class="buy-give clearFix">
+							<span>满送</span>
+							<div class="pro-number">
+								<p>全店铺满99.00包邮，立减5.00</p>
+								<p>全店铺满99.00包邮，立减5.00</p>
+								<p>全店铺满99.00包邮，立减5.00</p>
+							</div>	
+						</div>
+						<span class="down-point left-point"></span>
+					</div>
+				</a>
+				<a href="javascript:;">
+					<div class="sale-alert-box clearFix">
+						<div class="buy-give clearFix">
+							<span>满送</span>
+							<div class="pro-number">
+								<p>全店铺满99.00包邮，立减5.00</p>
+								<p>全店铺满99.00包邮，立减5.00</p>
+								<p>全店铺满99.00包邮，立减5.00</p>
+							</div>	
+						</div>
+						<span class="down-point left-point"></span>
+					</div>
+				</a>
+				<div class="buy-give clearFix">
+					<span>买赠</span>
+					<div class="pro-number">
+						<p><i>温暧冬日线织手套</i><em>X1</em></p>
+						<p><i>温暧冬日线织手套</i><em>X1</em></p>
+						<p><i>最新iPhone7 plus 4G手机</i><em>X1；</em></p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+			<!-- 促销弹出框结束 -->
+
+		<!-- 促销结束 -->
+
+		<!--选择 -->
+
+		<div class="product-same-floor commonthing product-same-floor2 clearFix">
+			<span class="coupon choice">选择</span>
+			<div class="sale-active-warp choice-size">
+				<span>规格，</span>
+				<span>颜色，</span>
+				<span>套餐</span>
+				
+			</div>
+			<span class="down-point"></span>
+		</div>
+		<!--选择弹框 -->
+		<div class="shop-packet-warp product-kinds-warp"  style="display: none;">
+			<div class="first-logo">
+				<img src="images/pro-logo.jpg">
+			</div>
+			<span class="packet-close"></span>
+			<div class="product-kinds-top">
+				<div class="price-between">
+					<i>&yen;<em class="big-num">19</em>.90~</i><i>&yen;<em class="big-num">14</em>.50</i>
+				</div>
+				<span class="store">库存：<em>129</em></span>
+				<span class="spec-kinds"><em>选择</em><em>尺寸</em><em>颜色分类</em></span>
+			</div>
+			<div class="product-kinds-middle" >
+				<div class="standerd-warp">
+					<span class="standerd">规格</span>
+					<div class="standerd-content clearFix">
+						<a href="javascript:;" >19.90元包邮</a>
+						<a href="javascript:;">买三盒送一盒</a>
+						<a href="javascript:;" class="disabled">19.90元包邮</a>
+						
+					</div>
+				</div>
+				<div class="standerd-warp colors-warp"  id="clicked">
+					<span class="standerd colors">颜色</span>
+					<div class="standerd-content clearFix">
+						<a href="javascript:;">黑色</a>
+						<a href="javascript:;">红色</a>
+					</div>
+				</div>
+				<div class="standerd-warp numbers-warp ">
+					<div class="clearFix">
+						<span class="standerd colors numbers">数量</span>
+						<div class="counts-warp clearFix">
+							<span class="minus"><em></em></span>
+							<input type="" name="" value="1" class="mid-num">
+							<span class="plus"><em></em></span>
+						</div>
+						<!--减号可点 -->
+						<div class="counts-warp clearFix" style="display: none;">
+							<span class="minus black-minus"><em></em></span>
+							<input type="" name="" value="1" class="mid-num">
+							<span class="plus"><em></em></span>
+						</div>
+						<!--减号可点结束 -->
+					</div>
+
+					<div class="warn-num">已购满限购数量！</div>
+				</div>
+
+				
+			</div>
+			<div class="spec-menu-btn">
+				<a href="javascript:;" class="right-buy">立即购买</a>
+				<a href="javascript:;" class="add-shopping">加入购物车</a>
+			</div>
+		</div>
+		<!--选择弹框结束 -->
+
+		<!-- 选择结束 -->
+		
+		<!--地址配送 -->
+		<div class="product-same-floor commonthing product-same-floor3">
+			<div class="floor3-warp clearFix">
+				<span class="coupon send-address">送至</span>
+				<div class="sale-active-warp send clearFix">
+					<span class="position-ico"></span>
+					<p>北京市通州区永顺镇金融街园财经大厦.园财经大厦.园财经大厦...</p>
+				</div>
+				<span class="down-point"></span>
+			</div>
+			<div class="same-warp clearFix">
+				<span class="coupon send-address">运费</span>
+				<div class="sale-active-warp address-price clearFix">
+					<span><em>5.0</em>元</span>
+				</div>
+			</div>
+		</div>
+		<div class="shop-packet-warp" style="display: none;">
+			<div class="shop-packet-head">
+				<h3>选择收货地址</h3>
+				<span class="packet-close"></span>
+			</div>
+			<div class="address-warp">
+				<ul class="address-list">
+					<li>
+						<i class="address-ico"></i>
+						<span>北京市通州区永顺镇金融街园财经大厦北京市通州区永顺镇金融街园财经大厦</span>
+					</li>
+					<li>
+						<i ></i>
+						<span>北京市通州区永顺镇金融街园财经大厦北京市通州区永顺镇金融街园财经大厦</span>
+					</li>
+					<li>
+						<i ></i>
+						<span>北京市通州区永顺镇金融街园财经大厦北京市通州区永顺镇金融街园财经大厦</span>
+					</li>
+
+				</ul>
+			</div>
+			<div class="bottom-choice">
+				<a href="javascript:;" class="other-address">其他地址</a>
+			</div>
+
+		</div>
+		<!--地址配送结束 -->
+
+		<!--店铺状态 -->
+		<div class="product-same-floor product-same-floor4">
+			<div class="shop-warp">
+				<div class="shop-message clearFix">
+					<div class="shop-logo"><img src="images/shop-logo.jpg"></div>
+					<div class="shop-detail">
+						<div class="shop-name">宿迁农三品供销专营店</div>
+						<div class="stars">
+							<span class="clearFix"><i>5.0</i><em class="red"></em></span>
+							<span class="clearFix"><i>5.0</i><em class="red"></em></span>
+							<span class="active-color clearFix"><i>5.0</i><em class="green"></em></span>
+						</div>
+						<div class="match-message">
+							<span>描叙</span>
+							<span>服务</span>
+							<span>物流</span>
+						</div>
+
+					</div>
+					<div class="shop-words">	新春佳节，普天同庆。自2017年1月17日开始所有订单改发邮政物流。不便之处，敬请谅解。祝各位朋友春节快乐，阖家幸福。
+					</div>
+				</div>
+				<div class="shop-bottom clearFix">
+					<div class="shop-enter">
+						<a href="javascript:;">
+							<i class=""></i>
+							<span>进店逛逛</span>
+						</a>
+					</div>
+					<div class="shop-collect">
+						<a href="javascript:;">
+							<i></i>
+							<span>收藏店铺</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--店铺状态结束-->
+		
+		<!--店铺推荐 -->
+		<div class="product-same-floor product-same-floor5">
+			<div class="shopping-guess-container">
+				<div class="shopping-guess-title avtive-recommend">店铺推荐</div>
+				<div class="shopping-guess-title">排行榜</div>
+			</div>
+			<div class="shopping-switch-warp swiper-container1">
+				<div class="swiper-wrapper clearFix">
+					<div class="swiper-slide">
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro1.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro2.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro3.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro4.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro5.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro6.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="swiper-slide">
+					
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro1.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro2.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro3.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro4.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro5.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro6.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="swiper-slide">
+					
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro1.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro2.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro3.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro4.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro5.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro6.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class="swiper-pagination1"></div>
+			</div>
+			<div class="shopping-switch-warp swiper-container2" style="display:none;">
+				<div class="swiper-wrapper clearFix">
+					<div class="swiper-slide">
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro1.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro2.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro3.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro4.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro5.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro6.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="swiper-slide">
+					
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro1.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro2.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro3.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro4.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro5.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro6.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="swiper-slide">
+					
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro1.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro2.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro3.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+						<ul class="shopping-list">
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro4.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro5.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="images/shopping-pro6.jpg">
+									<span>太行山新鲜苹果80果 5斤装</span>
+									<span>&yen;43.90</span>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class="swiper-pagination2"></div>
+			</div>
+		</div>
+		<!--店铺推荐结束 -->
+		
+		
+
+		<!-- 弹窗-->
+		<div class="mark"></div>
+		<!-- 弹窗-->
+
+	</section>
+	<!--详情页内容 -->
+	<section class="detail-warp" style="display: none;">
+		<ul class="tab-lst" id="tab-lst">
+			<li class="graphic">
+				<a href="javascript:;" class="silde-color">图文介绍</a>
+			</li>
+			<li>
+				<a href="javascript:;">规格参数</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="tab-content">
+			<div class="graphic-con">
+				<img src="images/pic.jpg">
+				<img src="images/pic.jpg">
+				<img src="images/pic.jpg">
+			</div>
+			<div class="spec-con" style="display: none;">
+				<ul class="spec-list">
+					<li class="clearFix">
+						<span>商品编号</span>
+						<strong>0000037990</strong>
+					</li>
+					<li class="clearFix">
+						<span>商品品牌</span>
+						<strong>围寨河</strong>
+					</li>
+					<li class="clearFix">
+						<span>商品名称</span>
+						<strong>宁晋 正宗雪花梨 个头均匀 脆甜多汁 果园直发 新鲜直达 3.5/4斤装</strong>
+					</li>
+					<li class="clearFix">
+						<span>保&ensp;质&ensp;期</span>
+						<strong>15天   国产/进口：国产</strong>
+					</li>
+					<li class="clearFix">
+						<span>产&ensp;&ensp;&ensp;&ensp;地</span>
+						<strong>宁晋</strong>
+					</li>
+					<li class="clearFix">
+						<span>包&ensp;&ensp;&ensp;&ensp;装</span>
+						<strong>盒装</strong>
+					</li>
+					<li class="clearFix">
+						<span>储藏方式</span>
+						<strong>常温保存</strong>
+					</li>
+					<li class="clearFix">
+						<span>销售区域</span>
+						<strong>全国</strong>
+					</li>
+					<li class="clearFix">
+						<span>配送范围</span>
+						<strong>全国</strong>
+					</li>
+					<li class="clearFix">
+						<span>配送范围内送货</span>
+						<strong>全国</strong>
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</section>
+	<!--详情页内容结束 -->
+	<div class="block-null"></div>
+	<!--固定底部 -->
+	<div class="fixed-bottom-warp clearFix">
+		<div class="concern-cart clearFix">
+			<a href="javascript:;">
+				<em class="ico-customer"></em>
+				<span >客服</span>
+			</a>
+			<a href="javascript:;">
+				<em class="ico-collection"></em>
+				<span>收藏</span>
+			</a>
+			<a href="javascript:;">
+				<em class="ico-shoppingcar"></em>
+				<span>购物车</span>
+			</a>
+		</div>
+
+		<div class="action-list">
+			<a href="javascript:;" class="add-shopcar">加入购物车</a>
+			<a href="javascript:;" class="buy-now">立即购买</a>
+		</div>
+	</div>
+	
+	<!--固定底部结束 -->
+
+
+<script type="text/javascript" src="js/jquery-2.2.1.js" ></script>
+<script src="js/swiper-3.3.1.jquery.min.js"></script>
+<script>
+    var swiper1 = new Swiper('.swiper1', {
+       
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction',
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+  		observeParents:true//修改swiper的父元素时，自动初始化swiper
+  		
+    });
+    var swiper1 = new Swiper('.swiper-container1', {
+       
+        pagination: '.swiper-pagination1',
+          observer:true,//修改swiper自己或子元素时，自动初始化swiper
+  		  observeParents:true//修改swiper的父元素时，自动初始化swiper
+    });
+    var swiper2 = new Swiper('.swiper-container2', {
+       
+        pagination: '.swiper-pagination2',
+         observer:true,//修改swiper自己或子元素时，自动初始化swiper
+  		 observeParents:true//修改swiper的父元素时，自动初始化swiper
+    });
+</script>
+<script src="js/countdown.js"></script>
+</body>
+
+</html>

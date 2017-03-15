@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+h2, p, ul, input {
+	margin: 0;
+	padding: 0;
+}
+i,em{
+	font-style: normal;
+}
+body {
+	height: 100%;
+	overflow: auto;
+
+	font-size: .4rem;
+	background: #f5f5f5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, "黑体";
+}
+
+li {
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+.clearFix {
+	zoom: 1;
+}
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	display: block;
+}
+html {
+	height: 100%;
+	position: relative;
+
+}
+/* --取消手机点击屏幕时，会出现的灰块--- */
+html,body{
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* --取消手机点击屏幕时，会出现的灰块结束----- */
+.pre-container{
+	position: fixed;
+	top: 12.5rem;
+	left: 5rem;
+	width: 8.1rem;
+	text-align: center;
+	
+}
+.number-alert-floor{
+	background: #000;
+	opacity: .5;
+	position: relative;
+	height: 4.5rem;
+	border-radius: 5px;
+	width: 7.0rem;
+	text-align: center;
+}
+.num-ico{
+	position: absolute;
+	top: .6rem;
+	left: 2.4rem;
+	width: 2.0rem;
+	height: 2.0rem;
+	background-size: 100%;
+}
+
+.number-alert-floor p{
+	color: #fff;
+	font-size: 0.75rem;
+	position: relative;
+	top: 2.9rem;
+}
+
+.number-alert-floor2{
+	background: #000;
+	opacity: .5;
+	width: 10.25rem;
+	height: 2.45rem;
+	line-height: 2.45rem;
+	border-radius: 5px;
+	text-align: center;
+}
+.number-alert-floor2 p{
+	color: #fff;
+	font-size: 0.75rem;
+}
+
+.right-ico{
+	background: url(../images/order_toast_tag.png) no-repeat;
+	background-size: 100%;
+}
